@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url('../images/bg-repeat.jpg');
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container .suporte {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .suporte h1, p {
+    color: #fff;
+}
+
+.container .suporte h1 {
+    font-size: 40px;
+}
+
+.container .suporte p {
+    font-size: 20px;
+}
+
+.container .formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.container .formulario input, textarea {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container .formulario textarea {
+    height: 150px;
+    resize: none;
+}
+
+.container .formulario button {
+    background-color: #3CCC87;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container .formulario .dado.invalido{
+    border-color: #F52E2E;
+}
+
+.container .formulario .dado.valido{
+    border-color: #3CCC87;
+}
+
+.container .formulario .erro {
+    color: #F52E2E;
+    font-size: 10px;
+    opacity: 0;
+}
+
+.container .formulario .erro.visivel {
+    opacity: 1;
+}
